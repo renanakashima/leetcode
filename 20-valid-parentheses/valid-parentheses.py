@@ -4,12 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        count1 = 0
-        count2 = 0
-        count3 = 0
-
-        open = False
-
+        
         arr = []
 
         for i in range(0, len(s)):
