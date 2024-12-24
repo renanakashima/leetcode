@@ -4,18 +4,10 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        a = 0
-        x = 1
-        y = 2
-
-        if n == 1:
-            return x
-        elif n == 2:
-            return y
-
-        for i in range(3,n+1):
-            a = x + y
-            x = y
-            y = a
-
-        return a
+        curr = 1
+        prev = 1
+        for i in range(n-1):
+            temp = curr
+            curr = curr + prev
+            prev = temp
+        return curr
