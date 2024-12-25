@@ -6,7 +6,10 @@ class Solution(object):
         """
         count = 0
         end = 0
-        
+
+        print(s.split())
+        s = s.split()
+        '''
         for i in range(1, len(s)+1):
             if s[-i] != " ":
                 end = i
@@ -17,5 +20,5 @@ class Solution(object):
                 count += 1
             else:
                 break
-        
-        return count
+        '''
+        return len(s[-1])
