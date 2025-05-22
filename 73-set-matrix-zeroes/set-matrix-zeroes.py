@@ -7,8 +7,6 @@ class Solution(object):
         marker = 0.5
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
-                if matrix[i][j] == marker:
-                    continue
                 if matrix[i][j] == 0:
                     for r in range(len(matrix)):
                         if matrix[r][j] != 0:
